@@ -421,9 +421,9 @@ conda_env: conda.yaml
 entry_points:
   main:
     parameters:
-      final_model_path: {type: str, default: "/dbfs/user/srafiaha@ur.rochester.edu/mlflow/99_putting_it_all_together_psp/final-model2"}
-      test_data_path: {type: str, default: "dbfs/user/srafiaha@ur.rochester.edu/mlflow/99_putting_it_all_together_psp/test_data.csv"}
-      prediction_path: {type: str, default: "/dbfs/user/srafiaha@ur.rochester.edu/mlflow/99_putting_it_all_together_psp/predictions.csv"}
+      final_model_path: {type: str, default: "/dbfs/user/sshakil2@ur.rochester.edu/mlflow/99_putting_it_all_together_psp/final-model2"}
+      test_data_path: {type: str, default: "dbfs/user/sshakil2@ur.rochester.edu/mlflow/99_putting_it_all_together_psp/test_data.csv"}
+      prediction_path: {type: str, default: "/dbfs/user/sshakil2@ur.rochester.edu/mlflow/99_putting_it_all_together_psp/predictions.csv"}
     command:  "python predict.py --final_model_path {final_model_path} --test_data_path {test_data_path} --prediction_path {prediction_path}"
 '''.strip(), overwrite=True)
 
